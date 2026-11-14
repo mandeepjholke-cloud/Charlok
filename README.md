@@ -1,17 +1,17 @@
-# CHARLOK — Android starter project
+# CHARLOK — AI Call Assistant (Web)
 
-This is the first native Android Compose scaffold for the CHARLOK rebrand.
+This is the React + TypeScript + Vite web application ported from the CHARLOK Android Compose starter (`com.charlok.assistant`).
 
-## Current starter scope
-- App label and package namespace branded as CHARLOK (`com.charlok.assistant`).
-- Dark navy + electric-blue theme.
-- Initial home screen and navigation placeholders for Home, Calls, History and Settings.
-- No sensitive call/contact/microphone permission is requested in this starter.
+## Features
+- Dark navy + electric-blue CHARLOK theme (`#080D18` background, `#111A2A` cards, `#4F8CFF` primary accent).
+- Home screen with CHARLOK header (`PREVIEW` badge), hero card, and `Set up call assistant` CTA.
+- Workspace cards for **Call assistant**, **Recent conversations**, and **Call preferences**, plus privacy-first notice.
+- Bottom navigation bar with tabs for **Home**, **Calls**, **History**, and **Settings**.
 
-## Build
-Open this folder in Android Studio (Giraffe or newer) and let Gradle sync. Build the `app` debug APK.
+## Development
+```bash
+npm install
+npm run dev
+```
 
-## Important implementation notes
-The supplied Equal AI split APK manifest was statically inspected. It declares a call-screening service and permissions for phone state, contacts, microphone, notifications, and overlay/foreground services. This starter intentionally does not copy the original app's code, signing identity, backend endpoints, API keys, or private assets. A clean implementation of call screening must request the Android call-screening role and each required runtime permission with clear user consent. AI call handling, transcripts, summaries, cloud sync, and authentication still need their own backend/API integration.
-
-REA's Android workflow is documented in the official `morluto/rea` skill, but REA analysis tools are not connected in this ChatGPT session. The current environment also has Node 22.16.0, below REA's documented minimum Node 22.19. This starter therefore does not claim to contain REA decompilation findings or a completed clone.
+Runs on `http://0.0.0.0:3000`.

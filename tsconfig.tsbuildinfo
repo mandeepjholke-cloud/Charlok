@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts","./src/audio/liveAudio.ts","./src/components/CallsView.tsx","./src/components/Header.tsx","./src/components/HistoryView.tsx","./src/components/OfflineIndicator.tsx","./src/components/PWAInstallButton.tsx","./src/components/SettingsView.tsx","./src/hooks/usePWAInstall.ts"],"version":"5.7.3"}

@@ -1,0 +1,6 @@
+{
+  "name": "CHARLOK",
+  "description": "CHARLOK AI Call Assistant — stay on top of important conversations.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
